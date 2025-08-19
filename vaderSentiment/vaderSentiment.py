@@ -31,60 +31,64 @@ C_INCR = 0.733
 N_SCALAR = -0.74
 
 NEGATE = \
-    ["aint", "arent", "cannot", "cant", "couldnt", "darent", "didnt", "doesnt",
-     "ain't", "aren't", "can't", "couldn't", "daren't", "didn't", "doesn't",
-     "dont", "hadnt", "hasnt", "havent", "isnt", "mightnt", "mustnt", "neither",
-     "don't", "hadn't", "hasn't", "haven't", "isn't", "mightn't", "mustn't",
-     "neednt", "needn't", "never", "none", "nope", "nor", "not", "nothing", "nowhere",
-     "oughtnt", "shant", "shouldnt", "uhuh", "wasnt", "werent",
-     "oughtn't", "shan't", "shouldn't", "uh-uh", "wasn't", "weren't",
-     "without", "wont", "wouldnt", "won't", "wouldn't", "rarely", "seldom", "despite"]
+    ["tidak", "tak", "bukan", "bukanlah", "tiada", "tanpa", "belum",
+     "jangan", "janganlah", "gak", "ga", "kagak", "engga", "enggak", "ngga", "nggak",
+     "ogah", "gamau", "gkmau", "gakmau", "takmau", "takkan", "takada",
+     "nihil", "kosong", "hampa", "sia-sia", "percuma", "mustahil",
+     "jarang", "langka", "sulit", "susah", "minim", "kurang", "kekurangan",
+     "meskipun", "walaupun", "walau", "sekalipun", "kendati", "kendatipun"]
 
-# booster/dampener 'intensifiers' or 'degree adverbs'
-# http://en.wiktionary.org/wiki/Category:English_degree_adverbs
+# booster/dampener 'intensifiers' or 'degree adverbs' untuk Bahasa Indonesia
 
 BOOSTER_DICT = \
-    {"absolutely": B_INCR, "amazingly": B_INCR, "awfully": B_INCR,
-     "completely": B_INCR, "considerable": B_INCR, "considerably": B_INCR,
-     "decidedly": B_INCR, "deeply": B_INCR, "effing": B_INCR, "enormous": B_INCR, "enormously": B_INCR,
-     "entirely": B_INCR, "especially": B_INCR, "exceptional": B_INCR, "exceptionally": B_INCR,
-     "extreme": B_INCR, "extremely": B_INCR,
-     "fabulously": B_INCR, "flipping": B_INCR, "flippin": B_INCR, "frackin": B_INCR, "fracking": B_INCR,
-     "fricking": B_INCR, "frickin": B_INCR, "frigging": B_INCR, "friggin": B_INCR, "fully": B_INCR,
-     "fuckin": B_INCR, "fucking": B_INCR, "fuggin": B_INCR, "fugging": B_INCR,
-     "greatly": B_INCR, "hella": B_INCR, "highly": B_INCR, "hugely": B_INCR,
-     "incredible": B_INCR, "incredibly": B_INCR, "intensely": B_INCR,
-     "major": B_INCR, "majorly": B_INCR, "more": B_INCR, "most": B_INCR, "particularly": B_INCR,
-     "purely": B_INCR, "quite": B_INCR, "really": B_INCR, "remarkably": B_INCR,
-     "so": B_INCR, "substantially": B_INCR,
-     "thoroughly": B_INCR, "total": B_INCR, "totally": B_INCR, "tremendous": B_INCR, "tremendously": B_INCR,
-     "uber": B_INCR, "unbelievably": B_INCR, "unusually": B_INCR, "utter": B_INCR, "utterly": B_INCR,
-     "very": B_INCR,
-     "almost": B_DECR, "barely": B_DECR, "hardly": B_DECR, "just enough": B_DECR,
-     "kind of": B_DECR, "kinda": B_DECR, "kindof": B_DECR, "kind-of": B_DECR,
-     "less": B_DECR, "little": B_DECR, "marginal": B_DECR, "marginally": B_DECR,
-     "occasional": B_DECR, "occasionally": B_DECR, "partly": B_DECR,
-     "scarce": B_DECR, "scarcely": B_DECR, "slight": B_DECR, "slightly": B_DECR, "somewhat": B_DECR,
-     "sort of": B_DECR, "sorta": B_DECR, "sortof": B_DECR, "sort-of": B_DECR}
+    {"sangat": B_INCR, "amat": B_INCR, "sungguh": B_INCR, "benar-benar": B_INCR,
+     "betul-betul": B_INCR, "banget": B_INCR, "bgt": B_INCR, "bngt": B_INCR,
+     "sekali": B_INCR, "nian": B_INCR, "teramat": B_INCR, "terlalu": B_INCR,
+     "kelewat": B_INCR, "kelewatan": B_INCR, "keterlaluan": B_INCR,
+     "luar biasa": B_INCR, "luarbiasa": B_INCR, "dahsyat": B_INCR, "hebat": B_INCR,
+     "mantap": B_INCR, "mantul": B_INCR, "keren": B_INCR, "gila": B_INCR,
+     "parah": B_INCR, "ekstrem": B_INCR, "ekstrim": B_INCR, "maksimal": B_INCR,
+     "total": B_INCR, "sepenuhnya": B_INCR, "seutuhnya": B_INCR, "seluruhnya": B_INCR,
+     "seratus persen": B_INCR, "100%": B_INCR, "paling": B_INCR, "ter": B_INCR,
+     "super": B_INCR, "mega": B_INCR, "ultra": B_INCR, "ekstra": B_INCR,
+     "lebih": B_INCR, "makin": B_INCR, "semakin": B_INCR, "kian": B_INCR,
+     "bener2": B_INCR, "bnr2": B_INCR, "bener-bener": B_INCR, "asli": B_INCR,
+     "murni": B_INCR, "pisan": B_INCR, "poll": B_INCR, "pake banget": B_INCR,
+     "njir": B_INCR, "anjir": B_INCR, "anjay": B_INCR, "astaga": B_INCR,
+     "masya allah": B_INCR, "masyaallah": B_INCR, "subhanallah": B_INCR,
+     "hampir": B_DECR, "nyaris": B_DECR, "agak": B_DECR, "rada": B_DECR,
+     "sedikit": B_DECR, "dikit": B_DECR, "cuma": B_DECR, "cuman": B_DECR,
+     "hanya": B_DECR, "sekadar": B_DECR, "sekedar": B_DECR, "lumayan": B_DECR,
+     "biasa aja": B_DECR, "biasa saja": B_DECR, "standar": B_DECR,
+     "kurang": B_DECR, "minim": B_DECR, "tipis": B_DECR, "samar": B_DECR,
+     "kadang": B_DECR, "kadang-kadang": B_DECR, "terkadang": B_DECR,
+     "sesekali": B_DECR, "jarang": B_DECR, "langka": B_DECR}
 
-# check for sentiment laden idioms that do not contain lexicon words (future work, not yet implemented)
-SENTIMENT_LADEN_IDIOMS = {"cut the mustard": 2, "hand to mouth": -2,
-                          "back handed": -2, "blow smoke": -2, "blowing smoke": -2,
-                          "upper hand": 1, "break a leg": 2,
-                          "cooking with gas": 2, "in the black": 2, "in the red": -2,
-                          "on the ball": 2, "under the weather": -2}
+# check for sentiment laden idioms that do not contain lexicon words (Indonesian idioms)
+SENTIMENT_LADEN_IDIOMS = {"bintang lapangan": 3, "buah hati": 3, "jantung hati": 3,
+                          "makan hati": -3, "patah hati": -3, "sakit hati": -3,
+                          "naik daun": 2, "turun tangan": 2, "angkat tangan": -2,
+                          "buang muka": -2, "tutup mata": -2, "cuci tangan": -2,
+                          "darah daging": 2, "tulang punggung": 2, "tangan kanan": 2,
+                          "kambing hitam": -3, "air mata buaya": -3, "muka tembok": -2,
+                          "tinggi hati": -2, "besar kepala": -2, "keras kepala": -1,
+                          "ringan tangan": 2, "panjang tangan": -3, "tangan dingin": 2}
 
-# check for special case idioms and phrases containing lexicon words
-SPECIAL_CASES = {"the shit": 3, "the bomb": 3, "bad ass": 1.5, "badass": 1.5, "bus stop": 0.0,
-                 "yeah right": -2, "kiss of death": -1.5, "to die for": 3,
-                 "beating heart": 3.1, "broken heart": -2.9 }
+# check for special case idioms and phrases containing lexicon words (Indonesian)
+SPECIAL_CASES = {"mantap jiwa": 3, "keren abis": 3, "gokil abis": 3, "gila bener": 2.5,
+                 "parah banget": -3, "anjir banget": 2, "goks banget": 2.5,
+                 "ya kali": -2, "yeu kali": -2, "masa sih": -1.5, "ah masa": -2,
+                 "bohong banget": -3, "boong ah": -2, "ngaco banget": -3,
+                 "kacau balau": -3, "berantakan parah": -3, "hancur lebur": -3,
+                 "top markotop": 3, "joss gandos": 3, "mantul gan": 3,
+                 "sedih banget": -3, "seneng banget": 3, "bahagia banget": 3}
 
 
 # #Static methods# #
 
 def negated(input_words, include_nt=True):
     """
-    Determine if input contains negation words
+    Determine if input contains negation words (Indonesian)
     """
     input_words = [str(w).lower() for w in input_words]
     neg_words = []
@@ -92,14 +96,15 @@ def negated(input_words, include_nt=True):
     for word in neg_words:
         if word in input_words:
             return True
-    if include_nt:
-        for word in input_words:
-            if "n't" in word:
-                return True
-    '''if "least" in input_words:
-        i = input_words.index("least")
-        if i > 0 and input_words[i - 1] != "at":
-            return True'''
+    # Check for Indonesian negation patterns
+    for word in input_words:
+        # Check for common Indonesian negation prefixes/patterns
+        if word.startswith("tidak") or word.startswith("tak"):
+            return True
+        if word.startswith("bukan") or word.startswith("belum"):
+            return True
+        if word in ["gak", "ga", "kagak", "engga", "enggak", "ngga", "nggak"]:
+            return True
     return False
 
 
@@ -196,7 +201,7 @@ class SentimentIntensityAnalyzer(object):
     Give a sentiment intensity score to sentences.
     """
 
-    def __init__(self, lexicon_file="vader_lexicon.txt", emoji_lexicon="emoji_utf8_lexicon.txt"):
+    def __init__(self, lexicon_file="vader_lexicon_id.txt", emoji_lexicon="emoji_utf8_lexicon.txt"):
         _this_module_file_path_ = os.path.abspath(getsourcefile(lambda: 0))
         lexicon_full_filepath = os.path.join(os.path.dirname(_this_module_file_path_), lexicon_file)
         with codecs.open(lexicon_full_filepath, encoding='utf-8') as f:
