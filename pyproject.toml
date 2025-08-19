@@ -1,0 +1,66 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vaderSentiment"
+version = "3.3.2"
+description = "VADER Sentiment Analysis adapted for Indonesian language"
+readme = "README.rst"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+    {name = "C.J. Hutto", email = "cjhutto@gatech.edu"}
+]
+keywords = [
+    "vader", "sentiment", "analysis", "opinion", "mining", 
+    "nlp", "text", "data", "indonesian", "bahasa"
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Natural Language :: Indonesian",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+    "Topic :: Text Processing :: Linguistic",
+    "Topic :: Text Processing :: General"
+]
+
+dependencies = [
+    "requests>=2.31.0"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-cov>=4.1.0",
+    "black>=23.7.0",
+    "flake8>=6.1.0",
+    "mypy>=1.5.0",
+    "pre-commit>=3.3.3"
+]
+data = [
+    "numpy>=1.24.0",
+    "pandas>=2.0.0"
+]
+
+[tool.setuptools.packages.find]
+include = ["vaderSentiment*"]
+exclude = ["tests*"]
+
+[tool.black]
+line-length = 100
+target-version = ['py38', 'py39', 'py310', 'py311', 'py312']
+
+[tool.mypy]
+python_version = "3.8"
+warn_return_any = true
+warn_unused_configs = true
